@@ -1,8 +1,7 @@
 var mySwiper = new Swiper('.image-slider', {
 
   loop: true,
-  touchRatio: 1,
-  spaceBetween: 0,
+  touchRatio: 2,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
