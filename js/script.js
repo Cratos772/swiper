@@ -1,6 +1,7 @@
 var mySwiper = new Swiper('.image-slider', {
 
   loop: true,
+  spaceBetween: 0,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -12,19 +13,8 @@ var mySwiper = new Swiper('.image-slider', {
     prevEl: '.swiper-button-prev',
   },
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-    // Customs bullets
-    // renderBullet: function(index, className) {
-    //   return '<span class="' + className + '">' + ( index + 1 ) + '</span>';
-    // }
+    type: 'fraction',
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
